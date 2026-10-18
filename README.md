@@ -5,7 +5,7 @@ A high-performance, secure, and rate-limited client-server tunneling system writ
 ## Features
 
 - **Asynchronous Architecture:** Powered by Python's `asyncio` for high concurrency and low latency.
-- **High Performance:** Uses `uvloop` uvloop as an optional drop-in replacement for the standard asyncio event loop to achieve higher throughput. If uvloop is missing, the system automatically falls back to the standard `asyncio` event loop without breaking functionality.
+- **High Performance:** Uses `uvloop` as an optional drop-in replacement for the standard asyncio event loop to achieve higher throughput. If uvloop is missing, the system automatically falls back to the standard `asyncio` event loop without breaking functionality.
 - **Transport Security:** All control and data traffic is fully encrypted using TLS 1.2+.
 - **Traffic Shaping:** Built-in per-client Token Bucket rate limiting to prevent server overloading.
 - **Per-Client Connection Limits:** Control the maximum number of simultaneous active tunnels per client.
